@@ -19,3 +19,34 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+    // Captura los datos del formulario
+    const name = document.querySelector('input[name="Name"]').value;
+    const email = document.querySelector('input[name="email"]').value;
+    const message = document.querySelector('textarea[name="Message"]').value;
+
+    // Crea un mensaje para WhatsApp con los datos del formulario
+    const whatsappMessage = `Hola, soy ${name}. Mi correo es ${email}. Mi asunto es: ${message}`;
+
+    // Actualiza el campo oculto con el mensaje de WhatsApp
+    document.querySelector('#whatsapp-message').value = encodeURIComponent(whatsappMessage);
+
+    // Genera el enlace de WhatsApp
+    const whatsappLink = `https://api.whatsapp.com/send?phone=+5218135656874&text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Redirige al usuario a WhatsApp
+    window.location.href = whatsappLink;
+});

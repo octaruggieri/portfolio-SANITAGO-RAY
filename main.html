@@ -140,7 +140,7 @@
       </div>
     </div>
     <!-- ---------------- PORTFOLIO --------------------- -->
-    <div id="portfolio">
+    <div id="portfolio" class="portfolio-section">
         <div class="container">
             <h1 class="sub-title">Mis Proyectos</h1>
             <div class="work-list">
@@ -178,32 +178,106 @@
         </div>
         <a href="#" class="btn">Saber Más</a>
     </div>
+
+    <!-- ---------------- SHADOW --------------------- -->
+    <div class="shadow-section"></div>
+
+    
+    <!-- ----------------- REVIEWS --------------------- -->
+    <div class="testimonials">
+      <div class="inner">
+        <h1>Reviews</h1>
+        <div class="border"></div>
+
+        <div class="row-2">
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/ssasnti.png" alt="">
+              <div class="name">Nombre Completo</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorem ducimus provident neque iure quia? Nulla maxime id pariatur 
+                quam doloremque reiciendis ad aperiam, 
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/ssasnti.png" alt="">
+              <div class="name">Nombre Completo</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorem ducimus provident neque iure quia? Nulla maxime id pariatur 
+                quam doloremque reiciendis ad aperiam, 
+              </p>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="testimonial">
+              <img src="images/ssasnti.png" alt="">
+              <div class="name">Nombre Completo</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorem ducimus provident neque iure quia? Nulla maxime id pariatur 
+                quam doloremque reiciendis ad aperiam, 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- ----------------------------- CONTACT ----------------------------- -->
-    <div id="contact">
+    <div id="contact" class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contactame</h1>
+                    <h1 class="sub-title">Contáctame</h1>
                     <p><i class="fa-solid fa-paper-plane"></i> info@raysantiago.com</p>
                     <p><i class="fa-solid fa-square-phone"></i> +15597222849</p>
                      <div class="social-icons">
-                        <a href="https://www.instagram.com/raysantiagor/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/raysantiagor/?hl=es-la"><i class="fa-brands fa-instagram"></i> ‎ ‎ Instagram</a>
                      </div>
                      <div class="social-icons">
-                        <a href="https://api.whatsapp.com/send/?phone=528135656874&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=528135656874&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i> ‎ ‎ WhatsApp</a>
                      </div>
                      <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/raysantiagor/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/raysantiagor/"><i class="fa-brands fa-linkedin"></i> ‎ ‎ LinkedIn</a>
                      </div>
                      
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Tu Nombre" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <textarea name="Message" rows="6" placeholder="Tu mensaje"></textarea>
-                        <button type="submit" class="btn btn2">Enviar</button>
-                    </form>
+                  <form id="contact-form">
+                    <input type="text" name="Name" placeholder="Tu Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                    <input type="hidden" id="whatsapp-message" name="whatsapp-message" value="">
+                </form>
                 </div>
             </div>
         </div>
